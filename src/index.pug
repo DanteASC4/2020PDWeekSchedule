@@ -24,10 +24,6 @@ html(lang="en")
   body
     div.container
       div.row
-        div.col.s2.left
-          button#test Test
-          button#test2 Test2
-      div.row
         div.col.s12.center
           h1.title All Star Code PD Week Schedule
           img#titleAsterik.col.s4.offset-s5(src="./assets/ASC_Asterik.svg", alt="All Star Code Asterik Logo")
@@ -53,6 +49,7 @@ html(lang="en")
             +schedule-block(`Orientation Intro`,`04:00PM - 04:15PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-yellow   day-1", footerClass="bg-yellow-d")
             +schedule-block(`Growth Mindset`,`04:15PM - 05:15PM`,`60`,``,``,``,``,``,``,``,``,``,``)(class="bg-asc-blue day-1", footerClass="bg-asc-blue-d")
             +schedule-block(`Exit Survey`,`05:15PM - 05:30PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-1", footerClass="bg-green-d")        li
+        li
           div#day-2-header.collapsible-header
             h2.title Jun 23rd, Tues - PD Week Day 2
           div.collapsible-body
@@ -69,6 +66,7 @@ html(lang="en")
             +schedule-block(`BREAK3`,`03:30PM - 03:45PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-dark     day-2", footerClass="bg-dark-d")
             +schedule-block(`Intersectionality`,`03:45PM - 04:45PM`,`60`,``,``,``,``,``,``,``,``,``,``)(class="bg-asc-blue day-2", footerClass="bg-asc-blue-d")
             +schedule-block(`Exit Survey`,`04:45PM - 05:00PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-2", footerClass="bg-green-d")        li
+        li
           div#day-3-header.collapsible-header
             h2.title Jun 24th, Tues - PD Week Day 3
           div.collapsible-body
@@ -84,6 +82,7 @@ html(lang="en")
             +schedule-block(`BREAK3`,`04:30PM - 04:45PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-dark     day-3", footerClass="bg-dark-d")
             +schedule-block(`Incoming & Returning Instructors`,`04:45PM - 05:45PM`,`60`,`Incoming Instructors Forum`,`https://drive.google.com/open?id=1f7lrwdIrWNcYqm9--GJqHXzBsZeIt_yh4cpXqKmVFwY`,`Returning Instructors Forum`,`https://drive.google.com/open?id=1YGjJMH3P6IvtxzOXsWv1Wd2qNf3fEYIY3I6pjFvEmRI`,``,``,``,``,``,``)(class="bg-purple   day-3", footerClass="bg-purple-d")
             +schedule-block(`Exit Survey`,`05:45PM - 06:00PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-3", footerClass="bg-green-d")        li
+        li
           div#day-4-header.collapsible-header
             h2.title Jun 25th, Tues - PD Week Day 4
           div.collapsible-body
@@ -98,6 +97,7 @@ html(lang="en")
             +schedule-block(`Orientation Prep`,`04:15PM - 05:00PM`,`45`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-4", footerClass="bg-green-d")
             +schedule-block(`Orientation Break`,`05:00PM - 06:00PM`,`60`,``,``,``,``,``,``,``,``,``,``)(class="bg-dark     day-4", footerClass="bg-dark-d")
             +schedule-block(`Orientation`,`06:00PM - 08:30PM`,`150`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-4", footerClass="bg-green-d")        li
+        li
           div#day-5-header.collapsible-header
             h2.title Jun 26th, Tues - PD Week Day 5
           div.collapsible-body
@@ -114,5 +114,6 @@ html(lang="en")
             +schedule-block(`Kahoot!`,`05:00PM - 05:30PM`,`30`,`Join Here`,`https://kahoot.it/`,``,``,``,``,``,``,``,``)(class="bg-purple   day-5", footerClass="bg-purple-d")
             +schedule-block(`Exit Survey2`,`05:30PM - 05:45PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-5", footerClass="bg-green-d")
             +schedule-block(`Closing Statement`,`05:45PM - 06:00PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-asc-blue day-5", footerClass="bg-asc-blue-d")    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
     script(src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js")
     script(src="./main.js", defer)

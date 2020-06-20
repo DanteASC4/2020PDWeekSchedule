@@ -2,7 +2,7 @@ import 'regenerator-runtime/runtime';
 
 document.addEventListener('DOMContentLoaded', function() {
   let elems = document.querySelectorAll('.collapsible');
-  let instances = M.Collapsible.init(elems, {accordian: true});
+  let instances = M.Collapsible.init(elems)
 
   async function delNodes(nList){
     await nList.forEach(n => n.remove());
@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
   let now = new Date();
   let today = now.getDate();
   let thisMonth = now.getMonth();
-  console.log(today, thisMonth);
-  console.log((today !== 16 && thisMonth !== 5));
+  // console.log(today, thisMonth);
+  // console.log((today !== 16 && thisMonth !== 5));
 
   if(thisMonth === 5){
     if(today < 22){
