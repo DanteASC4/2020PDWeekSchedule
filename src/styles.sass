@@ -14,6 +14,7 @@ $dark-asc-blue: #147DA3
 $main-dark: #121212
 $misc-dark: #3c4043
 $misc-dark-d: #303336
+$main-link-orange: #FF8C42
 
 @import 'https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'
 // font-family: 'Ubuntu', sans-serif;
@@ -156,3 +157,19 @@ li
   height: 75px
   width: 75px
   position: relative
+
+
+ul.collection > li.collection-item:last-child
+  border-bottom: none !important
+
+.collection-item
+  background-color: $main-dark !important
+  border-bottom: 1px solid $asc-blue !important
+
+.collection-item::before
+  @include overlay(0.01)
+  @include pseudo-overlay()
+  pointer-events: none
+
+ul.collection > li.collection-item > a
+  color: $main-link-orange

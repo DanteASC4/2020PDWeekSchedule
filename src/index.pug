@@ -21,6 +21,12 @@ html(lang="en")
             a(href=href3)= link3name
             a(href=href4)= link4name
             a(href=href5)= link5name
+  mixin Material-link(act_name, linkname, href, link2name, href2, link3name, href3)
+    li.collection-item
+      h5= act_name
+      a(href=href)= linkname
+      a(href=href2)= link2name
+      a(href=href3)= link3name
   body
     div.container
       div.row
@@ -74,7 +80,7 @@ html(lang="en")
             +schedule-block(`BREAK1`,`10:30AM - 10:45AM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-dark     day-3", footerClass="bg-dark-d")
             +schedule-block(`Virtual Learning: Expectations vs. Reality `,`10:45AM - 11:45AM`,`60`,`Presentation Slides`,`https://drive.google.com/file/d/18X9e8dkzuh2bjZ3gVdXkby30eS13gv3F/view?usp=sharing`,``,``,``,``,``,``,``,``)(class="bg-red      day-3", footerClass="bg-red-d")
             +schedule-block(`BREAK2`,`11:45AM - 12:00PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-dark     day-3", footerClass="bg-dark-d")
-            +schedule-block(`Building Virtual Community`,`12:00PM - 01:00PM`,`60`,``,``,``,``,``,``,``,``,``,``)(class="bg-red      day-3", footerClass="bg-red-d")
+            +schedule-block(`Building Virtual Community`,`12:00PM - 01:00PM`,`60`,`Presentation Slides`,`https://docs.google.com/presentation/d/1nutMZKr4t4HsYyfLsDodDbejF_W7g6pOpl61Mds0sIA/edit?usp=sharing`,``,``,``,``,``,``,``,``)(class="bg-red      day-3", footerClass="bg-red-d")
             +schedule-block(`LUNCH`,`01:00PM - 02:00PM`,`60`,``,``,``,``,``,``,``,``,``,``)(class="bg-dark     day-3", footerClass="bg-dark-d")
             +schedule-block(`Scholar Services`,`02:00PM - 02:15PM`,`15`,`Presentation Slides`,`https://docs.google.com/presentation/d/140Qf9VVRep3Cw47_socoE1ksCdEICMFICF8urvo8eEQ/edit?usp=sharing`,``,``,``,``,``,``,``,``)(class="bg-asc-blue day-3", footerClass="bg-asc-blue-d")
             +schedule-block(`Orientation Prep`,`02:45PM - 04:30PM`,`105`,``,``,``,``,``,``,``,``,``,``)(class="bg-yellow   day-3", footerClass="bg-yellow-d")
@@ -113,6 +119,29 @@ html(lang="en")
             +schedule-block(`Kahoot!`,`05:00PM - 05:30PM`,`30`,`Join Here`,`https://kahoot.it/`,``,``,``,``,``,``,``,``)(class="bg-purple   day-5", footerClass="bg-purple-d")
             +schedule-block(`Exit Survey2`,`05:30PM - 05:45PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-green    day-5", footerClass="bg-green-d")
             +schedule-block(`Closing Statement`,`05:45PM - 06:00PM`,`15`,``,``,``,``,``,``,``,``,``,``)(class="bg-asc-blue day-5", footerClass="bg-asc-blue-d")
+        li
+          div.collapsible-header
+            h2.title All PD Materials
+          div.collapsible-body
+            ul.collection
+              +Material-link(`Welcome To PD Week`, `Presentation Slides`, `https://docs.google.com/presentation/d/1ElfvmvpXf7jCYXmnNx_uMw6bNC-WYp70B3YaTrQ09Hw/edit?usp=sharing`)
+              +Material-link(`History of All Star Code`, `Presentation Slides`, `https://docs.google.com/presentation/d/1RamxV5sd1uTTpd4CueoJTSTiwrE5FbgiIEQLa0P9ZmE/edit?usp=sharing`)
+              +Material-link(`Preview of the Summer Intensive Program`, `Presentation Slides`, `https://docs.google.com/presentation/d/1d40Dv6RO8wUx1wZoo0ORcclB_7r6LWex13eGiihntTY/edit?usp=sharing`)
+              +Material-link(`Classroom Roles`, `Presentation Slides`, `https://docs.google.com/presentation/d/1Jx-a0q_fBK3tzVsHvNGDXuvCSffmTyWE8EeFhKeD3q0/edit?usp=sharing`)
+              +Material-link(`Human Resources (Operations)`, `Presentation Slides`, `https://docs.google.com/presentation/d/1yJyqN5-v0Su1rjIXpaWgJvO3r2-mDvakbzRR1rDM-bQ/edit?usp=sharing`)
+              +Material-link(`Navigating the Curriculum`, `Curriculum Website`, `https://asc2020si.org/`, `, Curriculum Google Drive`, `https://drive.google.com/open?id=1yT7FroMJhiQPeKLDuP4uG1hx8Ic8ubJf`)
+              +Material-link(`Setting the Norm`, `Setting the Norm Worksheet`, `https://docs.google.com/document/d/1COWZtOVM8A13jsfkIf8pIGKuHENmWIwB0vLXDyisW8M/edit?usp=sharing`)
+              +Material-link(`Orientation Intro`, `Run of Show (ROS)`, `https://docs.google.com/document/d/1jhtxGHC7UCje8MEeF1n7AmqumhwPvzJ5qBWErI_g-8Y/edit?usp=sharing`)
+              +Material-link(`Introduction to Remote Learning`, `Presentation Slides`, `https://docs.google.com/presentation/d/1VRJudc2QdZq42tcQqUc1mGgg2mIOzvGp_p5YiVXdWno/edit?usp=sharing`)
+              +Material-link(`Evaluation Standards`, `Presentation Slides`, `https://docs.google.com/presentation/d/1JSvpilZg89In1oReoVPx2KMsiEmuGhDwD85Wk7zO5d4/edit?usp=sharing`)
+              +Material-link(`Virtual Microteaching`, `Instructor Google Drive`, `https://drive.google.com/drive/folders/118gX5Gk6S9o5oPWX_YGCJmDihIr_kFhE`)
+              +Material-link(`Intersectionality`, `Presentation Slides`, `https://docs.google.com/presentation/d/1aFwf8bCXPT6xVKuu3liG5YnUmdEaSgihmc-s5nuZm3s/edit?usp=sharing`)
+              +Material-link(`Virtual Learning: Expectations vs. Reality`, `Presentation Slides`, `https://drive.google.com/file/d/18X9e8dkzuh2bjZ3gVdXkby30eS13gv3F/view?usp=sharing`)
+              +Material-link(`Building Virtual Community`, `Presentation Slides`, `https://docs.google.com/presentation/d/1nutMZKr4t4HsYyfLsDodDbejF_W7g6pOpl61Mds0sIA/edit?usp=sharing`)
+              +Material-link(`Scholar Services`, `Presentation Slides`, `https://docs.google.com/presentation/d/140Qf9VVRep3Cw47_socoE1ksCdEICMFICF8urvo8eEQ/edit?usp=sharing`)
+              +Material-link(`Orientation Briefing`, `Orientation Deck`, `https://docs.google.com/presentation/d/1TY6f96Rzitqyp13BujkX0uGtLNsuJGu3EuJE0rEWFOk/edit?usp=sharing`)
+              +Material-link(`Incoming & Returning Instructors`, `Incoming Instructors Forum`, `https://drive.google.com/open?id=1f7lrwdIrWNcYqm9--GJqHXzBsZeIt_yh4cpXqKmVFwY`, `, Returning Instructors Forum`, `https://drive.google.com/open?id=1YGjJMH3P6IvtxzOXsWv1Wd2qNf3fEYIY3I6pjFvEmRI`)
+              //- +Material-link(``, `Presentation Slides`, ``)
     script(src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js")
     //- This keeps getting removed for some reason
     script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
