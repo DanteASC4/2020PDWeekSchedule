@@ -16,17 +16,17 @@ html(lang="en")
             p= time
             p.hidden= dur
           div.card-action(class!=attributes.footerClass)
-            a(href=href)= linkname
-            a(href=href2)= link2name
-            a(href=href3)= link3name
-            a(href=href4)= link4name
-            a(href=href5)= link5name
+            a(target="_blank", href=href)= linkname
+            a(target="_blank", href=href2)= link2name
+            a(target="_blank", href=href3)= link3name
+            a(target="_blank", href=href4)= link4name
+            a(target="_blank", href=href5)= link5name
   mixin Material-link(act_name, linkname, href, link2name, href2, link3name, href3)
     li.collection-item
       h5= act_name
-      a(href=href)= linkname
-      a(href=href2)= link2name
-      a(href=href3)= link3name
+      a(target="_blank", href=href)= linkname
+      a(target="_blank", href=href2)= link2name
+      a(target="_blank", href=href3)= link3name
   body
     div.container
       div.row
